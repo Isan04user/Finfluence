@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+html,
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
 .container {
   padding-left: 90px;
   padding-right: 90px;
   margin: 0 auto;
   max-width: 1440px;
 }
+
+/* Header */
 
 .header {
   display: flex;
@@ -26,5 +34,55 @@
 }
 
 .logo p {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
+}
+
+/* Блок с заголовком в первой странице, section class="hero" */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin: 83px auto 167px;
+  max-width: 1440px;
+  height: 788px - 110px;
+  /* background-color: black; */
+}
+
+.vol-edu {
+  margin: 0 auto;
+  padding: 6px 19px;
+  border: 1px solid white;
+  border-radius: 14px;
+  background: linear-gradient(-119deg, #6e5dfe, #0a19e7);
+}
+
+.vol-edu span {
+  font-weight: 400;
+  color: white;
+}
+
+.h1 {
+  font-family: Rubik, sans-serif;
+  font-size: 76px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.subheading {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.participate-btn {
+  margin-top: 60px;
+  width: 212px;
+  height: 50px;
+  background: linear-gradient(90deg, #5189fa, #110eb8);
+  color: white;
+  border-radius: 25px;
+  font-weight: 700;
 }
