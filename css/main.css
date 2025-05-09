@@ -83,11 +83,149 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-
+  overflow: hidden;
   height: 788px;
-  /* background-color: black; */
+  /* background-color: salmon; */
 }
 
+/* background vectors */
+.wave-vector {
+  position: absolute;
+  z-index: 10;
+  width: min(100%, 1605.5px);
+  height: auto;
+  opacity: 0.81;
+  mix-blend-mode: color-burn;
+  pointer-events: none;
+  user-select: none;
+  top: 43.5%;
+  right: 0;
+  mix-blend-mode: color-burn;
+}
+
+.line-vector {
+  position: absolute;
+  z-index: 11;
+  width: min(100%, 1440px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 34%;
+  left: 0;
+}
+
+.v1 {
+  position: absolute;
+  z-index: 12;
+  width: min(100%, 1200px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 84%;
+  left: -1%;
+  filter: blur(70px);
+  opacity: 95%;
+}
+
+.v2 {
+  position: absolute;
+  z-index: -1;
+  width: min(100%, 666.2px);
+  height: min(100%, 699.29px);
+  pointer-events: none;
+  user-select: none;
+  top: -43%;
+  left: -28%;
+  filter: blur(200px);
+}
+
+.v3 {
+  position: absolute;
+  z-index: -2;
+  width: min(100%, 450px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: -10%;
+  left: 22%;
+  filter: blur(50px);
+}
+
+.v4 {
+  position: absolute;
+  z-index: -3;
+  width: min(100%, 450px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 3%;
+  left: -11.6%;
+  filter: blur(60px);
+  mix-blend-mode: hard-light;
+}
+
+.v5 {
+  position: absolute;
+  z-index: -4;
+  width: min(100%, 550px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 20%;
+  left: 5%;
+  filter: blur(70px);
+}
+
+.v6 {
+  position: absolute;
+  z-index: -5;
+  width: min(100%, 1210px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 38%;
+  left: -10%;
+  filter: blur(100px);
+}
+
+.v7 {
+  position: absolute;
+  z-index: -6;
+  width: min(100%, 1210px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: -19%;
+  left: 38%;
+  filter: blur(70px);
+}
+
+.v8 {
+  position: absolute;
+  z-index: -4;
+  width: min(100%, 1000px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 40%;
+  right: -26%;
+  filter: blur(20px);
+}
+
+.v9 {
+  position: absolute;
+  z-index: -4;
+  width: min(100%, 650px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  top: 24%;
+  right: -13%;
+  filter: blur(70px);
+  opacity: 60%;
+}
+
+/* Main hero elements */
 .vol-edu {
   margin-top: 80px;
   padding: 6px 19px;
@@ -105,11 +243,11 @@ body {
   font-family: Rubik, sans-serif;
   font-size: 76px;
   font-weight: 500;
-  margin-top: 40px;
+  margin-top: 28px;
 }
 
 .subheading {
-  margin-top: 40px;
+  margin-top: 22px;
   font-size: 22px;
   font-weight: 700;
 }
