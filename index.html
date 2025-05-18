@@ -1,42 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wellcome to Finfluence</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-  </head>
-  <body>
-    <header class="header container">
-      <div class="logo">
-        <img src="./img/logo.png" alt="Finfluence logo" class="logo-img" />
-        <p>Finfluence</p>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finfluence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik:wght@500&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif; /* Fallback for about text */
+      background: #FFFFFF; /* Solid white background */
+      color: #000000CC; /* 80% opacity black for body text */
+      width: 1440px; /* Match page width */
+      height: 852px; /* Match page height */
+      border-radius: 30px 30px 0 0; /* Top-left and top-right border-radius */
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .container {
+      position: relative;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    /* Title section */
+    .title-container {
+      position: absolute;
+      width: 1041.28px;
+      height: 213.7px;
+      top: 60px;
+      left: 91px;
+      
+    }
+
+    .title-container h1 {
+      font-family: 'Montserrat', sans-serif; /* Fallback for Artico Soft Bold */
+      font-size: 5rem; /* Adjusted to match design */
+      margin-left: 100px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #2D596E, #2F0A27); /* Gradient color */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-top: 10px;
+    }
+
+    .title-container h2 {
+      font-family: 'Montserrat', sans-serif; /* Fallback for Artico Soft Bold */
+      font-size: 6rem; /* Adjusted to match design */
+      margin: 5px 0 0;
+      font-weight: 700;
+      background: linear-gradient(90deg, #2c3e50, #bdc3c7); /* Gradient color */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-top: -10px;
+      
+    }
+
+    /* Video box */
+    .video-box {
+    position: absolute;
+    width: 494px;
+    height: 448px;
+    top: 334px;
+    left: 91px;
+    background: linear-gradient(135deg, #2B0CF4, #000819); /* Gradient background */
+    border-radius: 20px; /* Adjusted to match design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 54px;
+    }
+
+
+    .play-button {
+      width: 60px; /* Adjusted to match design */
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 20px solid #1e3a8a; /* Adjusted size and color */
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+
+    /* About text box */
+    .about-text {
+      position: absolute;
+      width: 687px;
+      height: 448px;
+      top: 334px;
+      left: 635px;
+    }
+
+    .about-text h3 {
+      font-family: 'Rubik', sans-serif; /* Rubik for "О нас" */
+      font-weight: 500;
+      font-size: 24px; /* 24px as specified */
+      color: #000000CC; /* 80% opacity black */
+      margin: 0 0 20px 0;
+      width: 65px; /* Match specified width */
+      height: 17px; /* Match specified height */
+      line-height: 1;
+    }
+
+    .about-text p {
+      font-family: 'Noto Sans', sans-serif; /* Noto Sans for about text */
+      font-weight: 500;
+      font-size: 16px; /* 16px as specified */
+      color: #000000CC; /* 80% opacity black */
+      line-height: 1.5;
+      margin: 0 0 15px 0;
+    }
+
+    /* Extra space below content */
+    .spacer {
+      height: 850px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title-container">
+      <h1>        Finfluence</h1>
+      <h2>Finance + Influence</h2>
+    </div>
+    <div class="video-box">
+      <div class="play-button">
+        <div class="triangle"></div>
       </div>
-
-      <ul class="nav-list">
-        <li><a href=""></a></li>
-      </ul>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="vol&edu">
-          <span>Волонтерство & Образование</span>
-        </div>
-
-        <h1>Контролируй деньги,<br />а не подчиняйся им</h1>
-
-        <p class="subheading">
-          Мы помогаем людям всех возрастов разобраться в финансах, <br />
-          чтобы каждый мог строить будущее без долгов и стресса.
-        </p>
-
-        <button class="participate-btn">Участвовать</button>
-      </section>
-    </main>
-
-    <footer></footer>
-    <script src="./js/main.js"></script>
-  </body>
+    </div>
+    <div class="about-text">
+      <h3>О нас</h3>
+      <p>
+        Идея проекта Finfluence возникла у его основательницы не из теоретических размышлений, а из личного опыта.
+        После одной из операций она оказалась в больничной палате с девятилетней девочкой, которая не посещала школу
+        из-за отсутствия финансовых возможностей у семьи. Мать девочки ожидала второго ребёнка, и в этой истории не
+        было драмы — лишь тихое принятие ограниченной реальности.
+      </p>
+      <p>
+        Этот случай стал для неё точкой внутреннего перелома. Она пришла к выводу: настоящие изменения начинаются
+        с мышления. Осознанность — не временное состояние, а образ жизни. Когда человек понимает свои ресурсы и
+        ограничения, у него появляется выбор. А выбор — это основа роста.
+      </p>
+      <p>
+        Так появилась инициатива Finfluence. Сегодня это международное сообщество, объединяющее тех, кто стремится
+        мыслить стратегически, действовать осознанно и строить устойчивое будущее. Проект предлагает не только знания,
+        но и культуру финансовой ответственности, давая молодёжи инструменты, с которыми они могут менять свою жизнь —
+        и мир вокруг.
+      </p>
+    </div>
+    <div class="spacer"></div>
+  </div>
+</body>
 </html>
